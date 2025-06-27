@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEA - GESCOM ERP para Distribuidoras</title>
+    <meta name="description" content="GESCOM: ERP especializado para distribuidoras de productos masivos. Solución integral multi empresa, multi moneda y 100% web.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="assets/logo-idea.png" alt="IDEA Logo" class="logo-img">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#clientes">Clientes</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+
+                <!-- Contact Info -->
+                <div class="header-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+54 9 11 3193 6488</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@computacionidea.com.ar</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobile-nav">
+                <a href="#inicio" onclick="closeMobileMenu()">Inicio</a>
+                <a href="#nosotros" onclick="closeMobileMenu()">Nosotros</a>
+                <a href="#servicios" onclick="closeMobileMenu()">Servicios</a>
+                <a href="#clientes" onclick="closeMobileMenu()">Clientes</a>
+                <a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
+                <div class="mobile-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Av. Pte. Perón 8725, Udaondo, Buenos Aires</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+54 9 11 3193 6488</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@computacionidea.com.ar</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-logos">
+                        <img src="assets/logo-gescom.png" alt="GESCOM Logo" class="gescom-logo">
+                    </div>
+                    <h1>ERP especializado para distribuidoras de productos masivos</h1>
+                    <p>Solución integral multi empresa, multi moneda y 100% web para optimizar la gestión de su distribuidora.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5491131936488?text=Hola%2C%20estoy%20navegando%20por%20su%20p%C3%A1gina%20y%20quer%C3%ADa%20solicitar%20una%20demo%20de%20GESCOM%20para%20mi%20distribuidora" 
+                           class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar demo
+                        </a>
+                        <button class="btn btn-outline" onclick="scrollToServices()">
+                            <i class="fas fa-arrow-down"></i>
+                            Conocer más
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-screen">
+                            <div class="screen-header">
+                                <div class="screen-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="screen-title">GESCOM Dashboard</span>
+                            </div>
+                            <div class="screen-content">
+                                <div class="chart-placeholder">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="stats-row">
+                                    <div class="stat-item">
+                                        <i class="fas fa-box"></i>
+                                        <span>Inventario</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-truck"></i>
+                                        <span>Logística</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-file-invoice"></i>
+                                        <span>Facturación</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegir GESCOM?</h2>
+                <p>Características que hacen la diferencia en la gestión de su distribuidora</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>100% Web</h3>
+                    <p>Acceda desde cualquier dispositivo con navegador web, sin necesidad de instalaciones locales.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Multi Empresa</h3>
+                    <p>Gestione múltiples empresas desde una única plataforma con total independencia y seguridad.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Multi Moneda</h3>
+                    <p>Opere con múltiples monedas y gestione tipos de cambio automáticamente en todas sus transacciones.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguridad AWS</h3>
+                    <p>Sus datos siempre seguros y disponibles en los servidores de Amazon Web Services.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive</h3>
+                    <p>Interfaz adaptable que funciona perfectamente en computadoras, tablets y smartphones.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Mesa de ayuda especializada disponible cuando la necesite para resolver cualquier consulta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre IDEA</h2>
+                    <p>Desde 1985, en IDEA nos hemos especializado en el desarrollo de soluciones tecnológicas para distribuidoras de productos masivos. A lo largo de nuestra trayectoria, hemos evolucionado constantemente, adaptándonos a las nuevas tecnologías para ofrecer siempre la mejor solución.</p>
+                    <p>Hoy, nuestro sistema GESCOM 100% web representa la culminación de décadas de experiencia en el sector, combinando conocimiento profundo del negocio con tecnología de vanguardia.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">+35</div>
+                            <div class="stat-label">Años de experiencia</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Tecnología web</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Soporte disponible</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clientes satisfechos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1985</div>
+                            <div class="timeline-content">
+                                <h4>Fundación</h4>
+                                <p>Inicio de IDEA con soluciones para distribuidoras</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2000</div>
+                            <div class="timeline-content">
+                                <h4>Expansión</h4>
+                                <p>Crecimiento y nuevos mercados</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2010</div>
+                            <div class="timeline-content">
+                                <h4>Innovación</h4>
+                                <p>Migración a tecnologías web</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="timeline-year">Hoy</div>
+                            <div class="timeline-content">
+                                <h4>GESCOM 100% Web</h4>
+                                <p>Solución integral en la nube</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones completas para distribuidoras de todos los tamaños</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>GESCOM para Distribuidoras</h3>
+                    <p>Sistema completo para gestionar todos los procesos de su distribuidora: ventas, inventario, logística, facturación, cobranzas y más.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Gestión de pedidos y rutas</li>
+                        <li><i class="fas fa-check"></i> Control de inventario en tiempo real</li>
+                        <li><i class="fas fa-check"></i> Facturación electrónica AFIP</li>
+                        <li><i class="fas fa-check"></i> Gestión de cobranzas</li>
+                        <li><i class="fas fa-check"></i> Reportes gerenciales</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Centralización Corporativa</h3>
+                    <p>Solución para grandes compañías que necesitan centralizar y analizar la información de sus distribuidoras en tiempo real.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Consolidación de datos</li>
+                        <li><i class="fas fa-check"></i> Dashboard ejecutivo</li>
+                        <li><i class="fas fa-check"></i> Análisis de rendimiento</li>
+                        <li><i class="fas fa-check"></i> KPIs en tiempo real</li>
+                        <li><i class="fas fa-check"></i> Reportes corporativos</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Soporte y Capacitación</h3>
+                    <p>Mesa de ayuda calificada y capacitación continua para aprovechar al máximo todas las funcionalidades del sistema.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Soporte técnico especializado</li>
+                        <li><i class="fas fa-check"></i> Capacitación personalizada</li>
+                        <li><i class="fas fa-check"></i> Actualizaciones continuas</li>
+                        <li><i class="fas fa-check"></i> Documentación completa</li>
+                        <li><i class="fas fa-check"></i> Videos tutoriales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clientes" class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Clientes</h2>
+                <p>Distribuidoras de reconocidas marcas confían en GESCOM</p>
+            </div>
+
+            <div class="clients-grid">
+                <div class="client-logo">
+                    <img src="assets/logos/pepsico.png" alt="PepsiCo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">PEPSICO</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/molinos.png" alt="Molinos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">MOLINOS</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/bic.png" alt="BIC" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">BIC</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/bat.png" alt="BAT" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">BAT</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/las-marias.png" alt="Las Marías" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">LAS MARÍAS</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/cmq.png" alt="CMQ" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">CMQ</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/speed.png" alt="Speed" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">SPEED</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/citric.png" alt="Citric" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">CITRIC</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/coca-cola.png" alt="Coca Cola" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">COCA COLA</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/fratelli-branca.png" alt="Fratelli Branca" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">FRATELLI BRANCA</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/torasso.png" alt="Torasso" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">TORASSO</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/sancor.png" alt="Sancor" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">SANCOR</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/logos/georgalos.png" alt="Georgalos" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder">GEORGALOS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Listo para optimizar su distribuidora?</h2>
+                    <p>Contáctenos y descubra cómo GESCOM puede transformar su negocio</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Dirección</h4>
+                                <p>Av. Pte. Perón 8725, Udaondo, Buenos Aires</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Teléfono</h4>
+                                <p>+54 9 11 3193 6488</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@computacionidea.com.ar</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horarios de Soporte</h4>
+                                <p>Lunes a viernes: 8 a 18 h<br>
+                                   Sábados: guardia de 8 a 13 h<br>
+                                   Feriados: guardia de 9 a 18 h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-buttons">
+                        <a href="https://wa.me/5491131936488?text=Hola%2C%20estoy%20navegando%20por%20su%20p%C3%A1gina%20y%20quer%C3%ADa%20solicitar%20una%20demo%20de%20GESCOM%20para%20mi%20distribuidora" 
+                           class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar Demo por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo-idea.png" alt="IDEA Logo" class="logo-img">
+                    </div>
+                    <p>Soluciones tecnológicas especializadas para distribuidoras desde 1985.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/5491131936488" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li>GESCOM para Distribuidoras</li>
+                        <li>Centralización Corporativa</li>
+                        <li>Soporte y Capacitación</li>
+                        <li>Consultoría Especializada</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Pte. Perón 8725, Udaondo, Buenos Aires</p>
+                        <p><i class="fas fa-phone"></i> +54 9 11 3193 6488</p>
+                        <p><i class="fas fa-envelope"></i> info@computacionidea.com.ar</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horarios de Soporte</h3>
+                    <div class="support-hours">
+                        <p><strong>Lunes a viernes:</strong> 8 a 18 h</p>
+                        <p><strong>Sábados:</strong> guardia de 8 a 13 h</p>
+                        <p><strong>Feriados:</strong> guardia de 9 a 18 h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 IDEA - Computación. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
