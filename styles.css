@@ -1,4 +1,4 @@
-/* Reset y estilos base */
+/* Reinicio y estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
   padding: 0 20px;
 }
 
-/* Header */
+/* Encabezado */
 .header {
   background: #ffffff;
   border-bottom: 1px solid #e8ecef;
@@ -46,7 +46,7 @@ body {
   width: auto;
 }
 
-/* Desktop Navigation */
+/* Navegación de escritorio */
 .nav-desktop {
   display: flex;
   gap: 2rem;
@@ -110,7 +110,7 @@ body {
   color: #2c5aa0;
 }
 
-/* Mobile Navigation */
+/* Navegación móvil */
 .nav-mobile {
   display: none;
   flex-direction: column;
@@ -129,7 +129,7 @@ body {
 }
 
 .nav-mobile a:hover {
-  color: #2c5aa0;
+  color: #c53030;
 }
 
 .mobile-contact-info {
@@ -143,9 +143,9 @@ body {
   font-size: 0.85rem;
 }
 
-/* Hero Section */
+/* Sección principal */
 .hero {
-  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #dce3e7 0%, #354677 100%);
   color: white;
   padding: 8rem 0 5rem;
   margin-top: 80px;
@@ -254,7 +254,7 @@ body {
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
 
-/* Hero Image */
+/* Imagen principal */
 .hero-image {
   display: flex;
   justify-content: center;
@@ -281,12 +281,8 @@ body {
 }
 
 .screen-header {
-  background: #2c5aa0;
+  background: linear-gradient(135deg, #c53030 0%, #2c5aa0 100%);
   color: white;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .screen-dots {
@@ -354,7 +350,7 @@ body {
   font-weight: 500;
 }
 
-/* Features Section */
+/* Sección de características */
 .features {
   padding: 5rem 0;
   background: #f8f9fa;
@@ -403,7 +399,7 @@ body {
 .feature-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #c53030 0%, #8b4b8c 50%, #2c5aa0 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -428,7 +424,7 @@ body {
   line-height: 1.6;
 }
 
-/* About Section */
+/* Sección acerca de */
 .about {
   padding: 5rem 0;
   background: white;
@@ -471,9 +467,9 @@ body {
 }
 
 .stat-number {
+  color: #2c5aa0;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2c5aa0;
   margin-bottom: 0.5rem;
 }
 
@@ -483,7 +479,7 @@ body {
   font-weight: 500;
 }
 
-/* Timeline */
+/* Línea de tiempo */
 .timeline-container {
   background: #f8f9fa;
   padding: 2.5rem;
@@ -547,7 +543,7 @@ body {
   font-size: 0.95rem;
 }
 
-/* Services Section */
+/* Sección de servicios */
 .services {
   padding: 5rem 0;
   background: #f8f9fa;
@@ -576,8 +572,8 @@ body {
 .service-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
-  border-radius: 12px;
+  background: linear-gradient(135deg, #c53030 0%, #8b4b8c 50%, #2c5aa0 100%);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -620,7 +616,7 @@ body {
   font-size: 1rem;
 }
 
-/* Clients Section */
+/* Sección de clientes */
 .clients {
   padding: 5rem 0;
   background: white;
@@ -666,10 +662,10 @@ body {
   padding: 1rem;
 }
 
-/* Contact Section */
+/* Sección de contacto */
 .contact {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #516687 0%, #1e3a8a99 100%);
   color: white;
 }
 
@@ -742,7 +738,7 @@ body {
   text-align: center;
 }
 
-/* Footer */
+/* Pie de página */
 .footer {
   background: #2c3e50;
   color: white;
@@ -823,7 +819,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Diseño responsivo */
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
@@ -929,12 +925,12 @@ body {
   }
 }
 
-/* Smooth scrolling */
+/* Desplazamiento suave */
 html {
   scroll-behavior: smooth;
 }
 
-/* Animations */
+/* Animaciones */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -951,7 +947,7 @@ html {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Loading states */
+/* Estados de carga */
 .client-logo img {
   transition: opacity 0.3s ease;
 }

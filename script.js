@@ -1,4 +1,4 @@
-// Mobile menu functionality
+// Funcionalidad del menú móvil
 function toggleMobileMenu() {
   const mobileNav = document.getElementById("mobile-nav")
   const menuIcon = document.getElementById("menu-icon")
@@ -23,7 +23,7 @@ function closeMobileMenu() {
   menuIcon.className = "fas fa-bars"
 }
 
-// Scroll to services section
+// Desplazarse a la sección de servicios
 function scrollToServices() {
   const servicesSection = document.getElementById("servicios")
   if (servicesSection) {
@@ -38,7 +38,7 @@ function scrollToServices() {
   }
 }
 
-// Smooth scrolling for navigation links
+// Desplazamiento suave para enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -53,13 +53,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         behavior: "smooth",
       })
 
-      // Close mobile menu if open
+      // Cerrar menú móvil si está abierto
       closeMobileMenu()
     }
   })
 })
 
-// Add scroll effect to header
+// Agregar efecto de scroll al header
 window.addEventListener("scroll", () => {
   const header = document.querySelector(".header")
   if (window.scrollY > 50) {
@@ -69,7 +69,7 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Active navigation link highlighting
+// Resaltado de enlace de navegación activo
 window.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section[id]")
   const navLinks = document.querySelectorAll(".nav-desktop a[href^='#'], .nav-mobile a[href^='#']")
@@ -91,7 +91,7 @@ window.addEventListener("scroll", () => {
   })
 })
 
-// Intersection Observer for animations
+// Intersection Observer para animaciones
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -106,9 +106,9 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Initialize animations on page load
+// Inicializar animaciones al cargar la página
 document.addEventListener("DOMContentLoaded", () => {
-  // Animate elements on scroll
+  // Animar elementos al hacer scroll
   const animatedElements = document.querySelectorAll(".feature-card, .service-card, .client-logo, .timeline-item")
 
   animatedElements.forEach((el, index) => {
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el)
   })
 
-  // Handle logo loading errors
+  // Manejar errores de carga de logos
   const logoImages = document.querySelectorAll(".client-logo img")
   logoImages.forEach((img) => {
     img.addEventListener("error", function () {
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Add loading animation to hero
+  // Agregar animación de carga al hero
   const heroElements = document.querySelectorAll(".hero-text .hero-logos, .hero-text h1, .hero-text p, .hero-buttons")
   heroElements.forEach((el, index) => {
     el.style.opacity = "0"
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     el.style.animation = `fadeInUp 0.8s ease-out ${index * 0.2}s forwards`
   })
 
-  // Stats counter animation
+  // Animación de contador de estadísticas
   const stats = document.querySelectorAll(".stat-number")
   const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Counter animation function
+// Función de animación de contador
 function animateCounter(element, start, end, suffix) {
   const duration = 2000
   const increment = (end - start) / (duration / 16)
@@ -182,15 +182,15 @@ function animateCounter(element, start, end, suffix) {
   }, 16)
 }
 
-// WhatsApp button tracking (optional)
+// Seguimiento de botón de WhatsApp (opcional)
 document.querySelectorAll('a[href*="wa.me"]').forEach((link) => {
   link.addEventListener("click", () => {
-    // You can add analytics tracking here
-    console.log("WhatsApp button clicked:", link.href)
+    // Aquí puedes agregar seguimiento de analytics
+    console.log("Botón de WhatsApp clickeado:", link.href)
   })
 })
 
-// Lazy loading for images
+// Carga perezosa para imágenes
 if ("IntersectionObserver" in window) {
   const imageObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -210,7 +210,7 @@ if ("IntersectionObserver" in window) {
   })
 }
 
-// Smooth scroll polyfill for older browsers
+// Polyfill de scroll suave para navegadores antiguos
 if (!("scrollBehavior" in document.documentElement.style)) {
   const smoothScrollPolyfill = () => {
     const links = document.querySelectorAll('a[href^="#"]')
